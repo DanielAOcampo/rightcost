@@ -6,7 +6,7 @@ var gy = {
 
 	Global: {
 		init: function() {
-			var _rcost = this;
+			var _clearSK = this;
 			this.oPrettySelect();
 			this.oResponsiveNav();
 		},
@@ -17,6 +17,8 @@ var gy = {
 			$('.selectpicker').select2({
 				minimumResultsForSearch: -1
 			});
+
+			alert("test");
 		},
 
 		// Custom off canvas menu works in tablet only
@@ -191,7 +193,7 @@ var gy = {
 			  
 			},
 		oEditor: function() {
-			var _rcost = this;
+			var _clearSK = this;
 			var newURL = window.location.protocol + "//" + window.location.host;// + window.location.pathname;
 
 			var baseURL = (typeof baseURL == 'undefined') ? newURL+'/csk/' : baseURL ;
@@ -528,7 +530,7 @@ var gy = {
 		{	
 			
 
-			var _rcost = this;
+			var _clearSK = this;
 
 			//clear the uploaded files
 			$('body').on('click', '.upload-files', function(){
@@ -558,7 +560,7 @@ var gy = {
 		{
 
 
-			var _rcost = this;
+			var _clearSK = this;
 			$('body').on('click', '.set-post-thumbnail', function(){
 				
 				globalJs.Overlay.layOpen('.t-content');
@@ -579,7 +581,7 @@ var gy = {
 							post_id: _post_id
 						},
 					function(data){
-						_rcost.getPostAttachment();
+						_clearSK.getPostAttachment();
 					});
 					
 					globalJs.Overlay.layClose();
@@ -620,30 +622,30 @@ var gy = {
 			});
 		},
 		library: function(){
-			var _rcost = this;
+			var _clearSK = this;
 			$('body').on('click', '.media-library', function(){
 				var length = $('.media__attachment').length;
 				if( length == 0 )
 				{
-					_rcost.getMediaLibrary();
+					_clearSK.getMediaLibrary();
 				}
 				
 			});
 
 		},
 		search: function(){
-			var _rcost = this;
+			var _clearSK = this;
 			$('body').on('keyup', '#search-media', function(){
 				if($(this).val().length < 3 && $(this).val() != '' )
 					return false;
 				
-				_rcost.getMediaLibrary();
+				_clearSK.getMediaLibrary();
 			});
 		},
 		loadMore:function(){
-			var _rcost = this;
+			var _clearSK = this;
 			$('body').on('click', '#load-more-media', function(){
-				_rcost.getMediaLibrary();
+				_clearSK.getMediaLibrary();
 			});
 		},
 		getMediaLibrary: function(){
@@ -758,7 +760,7 @@ var gy = {
 		},
 
 		attach: function(){
-			var _rcost = this;
+			var _clearSK = this;
 
 			
 			
@@ -781,7 +783,7 @@ var gy = {
 					type: 'post',
 					title: ''
 					},function(){
-						_rcost.getPostAttachment();		
+						_clearSK.getPostAttachment();		
 					});
 				
 				
@@ -813,7 +815,7 @@ var gy = {
 					type: 'url',
 					title: title.val()
 					},function(){
-						_rcost.getPostAttachment();		
+						_clearSK.getPostAttachment();		
 					});
 					
 				
@@ -834,7 +836,7 @@ var gy = {
 		}
 
 
-	
+	},
 
 	Menu:{
 		init: function(){
@@ -917,4 +919,10 @@ var gy = {
 			
 			$('#_menu_item_type').trigger('change');
 		}
+		
+
 	}
+	
+	
+
+}

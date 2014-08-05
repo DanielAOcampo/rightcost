@@ -1,0 +1,5 @@
+@media (max-width: 480px) {
+  .post-properties div[class^="col-xs"] {
+    width: 100%!important;
+  }
+}

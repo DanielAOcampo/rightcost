@@ -1,0 +1,37 @@
+.breadcrumb{
+	background: none;
+	margin-bottom: 0px;
+	margin: 15px 0;
+	font-size: 18px;
+	text-transform: uppercase;
+
+	li{
+
+		&:first-child{
+			&:before{
+				content: ""!important;
+				display: none;
+			}
+
+		}
+		&:before{
+			content: "\f105"!important;
+			display: inline-block;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 1;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			margin: 0 10px;
+		}	
+
+		&.active{
+			color: rgba(255,255,255,.80);
+		}
+	}
+
+	a{
+		color: #fff;
+	}
+}

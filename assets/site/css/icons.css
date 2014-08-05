@@ -1,0 +1,97 @@
+[class^="icon-"],
+[class*="icon-"] {
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+
+.icons-sprite, .icons-icon-bathtab-o, .icons-icon-bathtab, .icons-icon-bedroom-o, .icons-icon-bedroom, .icons-icon-car-o, .icons-icon-car, .icons-icon-libra, .icons-icon-tel {
+  background-image: url('../i/icons-s41a8f0ddb9.png');
+  background-repeat: no-repeat;
+}
+
+.icons-icon-bathtab-o {
+  background-position: 0 0;
+}
+
+.icons-icon-bathtab {
+  background-position: 0 -23px;
+}
+
+.icons-icon-bedroom-o {
+  background-position: 0 -46px;
+}
+
+.icons-icon-bedroom {
+  background-position: 0 -64px;
+}
+
+.icons-icon-car-o {
+  background-position: 0 -82px;
+}
+
+.icons-icon-car {
+  background-position: 0 -92px;
+}
+
+.icons-icon-libra {
+  background-position: 0 -102px;
+}
+
+.icons-icon-tel {
+  background-position: 0 -120px;
+}
+
+.icon-tel {
+  width: 18px;
+  height: 18px;
+  background: url('../i/icons-s8214ff628f.png') 0 -190px;
+}
+
+.icon-libra {
+  width: 25px;
+  height: 22px;
+  background: url('../i/icons-s8214ff628f.png') 0 -162px;
+}
+
+.icon-bath {
+  width: 25px;
+  height: 22px;
+  background: url('../i/icons-s8214ff628f.png') 0 -33px;
+}
+
+.icon-bedroom {
+  width: 25px;
+  height: 22px;
+  background: url('../i/icons-s8214ff628f.png') 0 -94px;
+  background-position: 0 -28px !important;
+}
+
+.icon-car {
+  width: 25px;
+  height: 22px;
+  background: url('../i/icons-s8214ff628f.png') 0 -142px;
+  background-position: 0 -52px !important;
+}
+
+.icon-bath-o {
+  width: 32px;
+  height: 22px;
+  background: url('../i/icons-s8214ff628f.png') 0 0;
+  background-repeat: no-repeat;
+}
+
+.icon-bedroom-o {
+  width: 32px;
+  height: 22px;
+  background: url('../i/icons-s8214ff628f.png') 0 -66px;
+  background-position: 0 -60px;
+  background-repeat: no-repeat;
+}
+
+.icon-car-o {
+  width: 32px;
+  height: 22px;
+  background: url('../i/icons-s8214ff628f.png') 0 -122px;
+  background-position: 0 -111px;
+  background-repeat: no-repeat;
+}

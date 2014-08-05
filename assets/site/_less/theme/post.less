@@ -1,0 +1,180 @@
+.post-block {
+
+}
+
+.post-properties{
+	.post-item{
+		background-color: #f9f9f9;
+		margin-bottom: 20px;
+
+		img{
+			width: 100%;
+		}
+
+		.accomodations{
+			position: absolute;
+			top: 50%;
+		    left: 50%;
+		    -webkit-transform: translate(-50%, -115%);
+		    -moz-transform: translate(-50%, -115%);
+		    transform: translate(-50%, -115%);
+		}
+
+		&.private{
+			.post-img{
+				h4{
+					background: rgba(179,216,79,.7);
+					text-transform: uppercase;
+				}
+				.ribbon-inner{
+					background: @base_color3;
+
+					&:before{
+						content: '';
+						position: absolute;
+						display: block;
+						bottom: -24px;
+						border: 15px solid @base_color3;
+						border-top-width: 1.5em;
+						border-bottom-color: transparent;
+					}
+				}
+			}
+		}
+	}
+	.post-title{
+		margin: 20px 0 40px;
+		text-align: center;
+	}
+
+	.post-img{
+		position: relative;
+		.clearfix;
+
+		img{
+			.transition(all .5s);
+			.backface(hidden);
+		}
+
+		h4{
+			background: rgba(13,119,215,.7);
+			position: absolute;
+			bottom: 0px;
+			color: #fff;
+			margin: 0 0;
+			padding: 10px;
+			width: 100%;
+		}
+
+		&:hover{
+			.ribbon-inner{
+				height: 85px;
+			}
+
+			img{
+				.opacity(.8);
+			}
+		}
+
+
+	}
+}
+
+
+.prop-status{
+	position: relative;
+	background: #f4f4f4;
+	border-top: 1px solid @border_color;
+	padding: 40px 15px 15px;
+	.time{
+		margin: 0 0;
+		clear: both;
+		color: #f3830b;
+		text-align: center;
+	}
+}
+.accomodations{
+	display: block;
+	width: 91%;
+	list-style: none;
+	background: #fff;
+	border: 1px solid @border_color;
+	.border-radius(5px);
+	margin: 0 auto;
+	padding-left: 0;
+	.clearfix;
+
+
+	li{
+		float: left;
+		border-left: 1px solid @border_color;
+		text-align: center;
+		width: 33.3%;
+		font-size: 22px;
+		color: @base_color;
+		font-weight: 600;
+		padding: 10px 0px;
+		.box-sizing(border-box);
+
+		&:first-child{
+			border-left: none;
+		}
+		span.icon{
+			width: 20px;
+			padding-right: 30px;
+		}
+	}
+}
+.post-single{
+	.post-img-slider{
+
+		.flex-viewport{
+			position: relative;
+			z-index: 1;
+		}
+		
+	}
+	.post-item{
+		position: relative;
+	}
+	.post-details{
+		text-align: center;
+		
+		h2{
+			font-size: 33px;
+			margin-bottom: 30px;
+			color: #0c4576;
+		}
+		.post-actions{
+			margin: 0 auto;
+			width: 91%;
+
+			.btn{
+				margin-bottom: 20px;
+			}
+		}
+
+		.price{
+			font-weight: 400;
+			margin: 40px 0;
+			span{
+				color: @base_color-o;
+			}
+		}
+	}
+
+}
+.post-thumb-slider{
+	overflow: hidden;
+	margin-top: 0px;
+	margin: 0 -5px;
+
+	li{
+
+		margin: 0 5px;
+		img{
+			cursor: pointer;
+		}
+		
+	}
+}

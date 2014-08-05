@@ -1,0 +1,195 @@
+
+.navbar-toggle{
+    background-color: @base_color2;
+    height: 41px;
+    span{
+        background: #fff;
+        margin: 3px auto!important;
+    }
+}
+.nav{
+    font-family: @font-family-monospace;
+}
+
+.nav-default{
+    background: #fff;
+    .navbar-collapse{
+        margin-top: 20px;
+        .transition(ease .2s);
+    }
+    .navbar-utility{
+        margin-top: 23px;
+    }
+
+
+
+}
+
+.navbar-nav {
+
+    > li  {
+        > a {
+            padding-bottom: 20px;
+            font-size: 18px;
+            text-transform: uppercase;
+
+            span{
+                margin-right: 10px;
+            }
+        }
+
+        > .btn{
+            padding: 10px 20px;
+        }
+
+        &.active a,
+        a:hover {
+            background: transparent;
+        }
+    }
+}
+
+.navbar-utility {
+
+    margin-left: 10px;
+    .clearfix;
+    float: right;
+
+    & > li{
+        margin-left: 10px!important;
+    }
+}
+
+
+// Branding or Logo
+
+.navbar-brand {
+    display: inline-block;
+    width: 222px;
+    height: 95px;
+    max-width: 100%;
+    background-size: 100% auto;
+    background: url("@{image-url-site}/branding.png") no-repeat center;
+    .hide-text();
+    background-color: transparent;
+}
+
+.navbar-footer{
+
+    .navbar-brand-md {
+
+        background: url("@{image-url-site}/branding-md.png") no-repeat center;
+        max-width: 100%;
+        background-size: 100% auto;
+        width: 250px;
+        height: 110px;
+   
+    }
+
+}
+.nav-options{
+    .clearfix;
+    background: #00395f;
+    font-size: 16px;
+    .clearfix;
+
+    .nav{
+        float: left;
+        color: #fff;
+
+        & > li{
+            position: relative;
+            float: left;
+            border-right: 1px solid #1a4d6f;
+
+            &:first-child{
+                border-left: 1px solid #1a4d6f
+            }
+
+            & > a{
+                 color: #fff;
+
+                 & > span:first-child{
+                    margin-right: 15px;
+                 }
+
+                 &:hover{
+                    background: transparent;
+                 }
+            }
+
+            &.open{
+                a{
+                    background: rgba(255,255,255,.1);
+                }
+                
+            }
+        }
+        .dropdown-toggle{
+            float: left;
+            color: #fff;
+
+            &:hover{
+                background: rgba(255,255,255,.1);
+            }
+            span{
+                margin-left: 10px;
+            }
+        }
+        .dropdown-menu{
+            left: 40%;
+            li{
+                display: block;
+                width: 100%;
+            }
+        }
+        label{
+            float: left;
+            padding: 10px 15px;
+            margin-bottom: 0px;
+            font-weight: 300;
+            padding-right: 0px;
+
+            span{
+                margin-right: 10px;
+            }
+        }
+    }
+    .nav-right{
+        float: right;
+        background: #254c6d;
+        position: relative;
+        
+
+        & > ul{
+            li{
+                position: relative;
+                z-index: 3;
+            }
+            
+        }
+
+        a{
+            &:hover{
+                color: #fff;
+                background: #23547d;
+            }
+
+            span{
+                padding: 0 10px;
+            }
+        }
+
+        &:after{
+            content: '';
+            position: absolute;
+            display: block;
+            width: 500%;
+            height: 100%;
+            right: -500%;
+            background: #254c6d;
+            z-index: 1;
+        }
+    }
+}
+

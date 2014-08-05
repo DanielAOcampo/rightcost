@@ -1,0 +1,14 @@
+.list-inline-bordered > li {
+  line-height: 1;
+  border-left: 1px solid #fff;
+}
+.list-inline-bordered > li:first-child {
+  border: 0;
+}
+.list-block {
+  padding-left: 0;
+  list-style: none;
+}
+.list-block li {
+  margin-bottom: 10px;
+}

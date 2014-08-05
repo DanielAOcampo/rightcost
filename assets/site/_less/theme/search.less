@@ -1,0 +1,86 @@
+.search-wrapper{
+	position: absolute;
+	height: auto;
+	width: 100%;
+	bottom: 50px;
+	left: 0px;
+	z-index: 2;
+
+	.form-search-lg{
+		.transition(all .3s);
+	}
+
+}
+
+.search-l1{
+	background-color: rgba(0,0,0,.5);
+	.border-radius(5px);
+	padding: 10px 10px 0px;
+	margin-bottom: 20px;
+	.transition(all .2s linear);
+	z-index: 3;
+
+	label{
+		font-weight: 500;
+	}
+
+	form{
+		.transition(all .2s);
+	}
+}
+
+.search-l1-main {
+	position: relative;
+	.transition(all .5s linear);
+	z-index: 4;
+	
+
+	@media (min-width: 800px){
+		top: 160px;
+	}
+}
+
+.search-title {
+	position: relative;
+	
+	.transition(all .3s linear);
+
+	@media (min-width: 800px){
+		top: 180px;
+	}
+}
+
+.search-advance{
+	@media (min-width: 800px){
+		position: relative;
+		top: 50px;
+		.opacity(0);
+		.transition(all .2s 0.3s linear);
+	}
+
+}
+
+.advance-show .search-advance{
+}
+
+// Trigger, when search advance button was clicked.
+
+.advance-show {
+	
+	@media (min-width: 800px){
+		.search-advance {
+			top: 0;
+			.opacity(1);
+		}
+
+		.search-l1-main {
+			top: 0;
+		}
+
+		.search-title {
+			top: 0;
+		}
+	}
+
+	
+}

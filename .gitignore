@@ -1,0 +1,8 @@
+app/config/database.php
+.htaccess
+app/storage/views/
+app/storage/cache/
+app/storage/sessions/
+app/storage/logs/
+media/uploads
+static/

@@ -1,0 +1,146 @@
+.btn{
+	.transition(all .1s);
+	text-transform: uppercase;
+	color: #fff;
+	padding: 15px 5px;
+	border: 0;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	text-align: center;
+	outline: none;
+	.border-radius(5px);
+
+
+	&:hover{
+		outline: none;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+
+	span{
+		margin-left: 10px;
+
+		&:first-child{
+			margin-left: 0px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.btn-default{
+	background-color: @base_color;
+
+	&:hover, &:focus{
+		background-color: @base_color-o!important;
+		color: #fff!important;
+	}
+}
+.btn-block{
+	display: block;
+	width: 100%;
+}
+.btn-light{
+	background-color: @base_color2;
+
+	&:hover, &:focus{
+		background-color: @base_color2-o!important;
+		color: #fff!important;
+	}
+}
+
+.btn-warning{
+	background-color: #ca2e25;
+
+	&:hover{
+		background-color: #e71f14;
+	}
+}
+.btn-green{
+	background: #94bb2b;
+	font-size: 23px;
+	color: #fff;
+
+	&:hover{
+		color: #fff;
+		background: #9cca1f;
+	}
+}
+
+.btn-lg{
+	padding: 15px 10px;
+}
+.btn-huge{
+	font-size: 20px;
+	padding: 45px 10px;
+}
+.btn-md{
+	padding: 20px 10px;
+	span.fa{
+		font-size: 35px;
+		margin-right: 0;
+	}
+}
+.btn-secondary{
+	position: relative;
+	text-align: left;
+	padding-left: 60px;
+
+	span{
+		position: absolute;
+		text-align: center;
+		left: 0px;
+		top: 0px;
+		height: 100%;
+		padding: 10px;	
+		border-right: 1px solid rgba(255,255,255,0.2);
+		width: 40px;
+		text-shadow: 0px 1px 0px rgba(0,0,0,.3);
+
+		&:before{
+			position: absolute;
+		    top: 50%;
+		    left: 50%;
+		    -webkit-transform: translate(-50%, -50%);
+		    -moz-transform: translate(-50%, -50%);
+		    transform: translate(-50%, -50%);
+		}
+	}
+}
+.btn-sm{
+	font-size: 18px;
+}
+.btn-close{
+	  display: none;
+	  position: absolute;
+	  background: transparent;
+	  color: #666;
+	  text-transform: uppercase;
+	  font-size: 20px;
+	  letter-spacing: 1px;
+	  right: 0px;
+	  top: 10px;
+	  padding: 10px 10px;
+	  text-shadow: none;
+	  z-index: 999;
+	  color: #fff;
+
+	  span{
+
+	  	margin-right: 0px!important;
+	  	margin: auto;
+	  	color: #fff;
+	     .transition(transform .7s);
+	  }
+	
+	&:hover{
+		span{
+			.rotate(360deg);
+			color: #fff;
+		}
+	}
+
+}

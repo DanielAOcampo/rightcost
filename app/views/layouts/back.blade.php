@@ -497,6 +497,7 @@
     <!-- The File Upload user interface plugin -->
     <script src="{{ URL::to('assets/admin/js/plugins/jQuery-File-Upload-9.2.1/js/jquery.fileupload-ui.js') }}"></script>
     <!-- The main application script -->
+    <script type="text/javascript" src="{{ URL::asset('assets/global/js/libs/chart.min.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('assets/global/js/csk_main.js') }}"></script>
     <script type="text/javascript" src="{{ URL::asset('assets/admin/js/csk_admin.js') }}"></script>
     <script>

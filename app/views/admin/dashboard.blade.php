@@ -111,19 +111,19 @@
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu--extended" role="menu">
                                         <li class="dd-menu--extended__item">
-                                            <label> All </label>
+                                            <a href="#"> All </a>
                                         </li>
                                         <li class="dd-menu--extended__item">
-                                            <label> Auction </label>
+                                            <a href="#"> Auction </a>
                                         </li>
                                         <li class="dd-menu--extended__item">
-                                            <label> Private Sale </label>
+                                            <a href="#"> Private Sale </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="form-group pull-left">
-                                <input type="text" class="form-control" placehoder="12,345">
+                                <input type="text" class="form-control" value="12,345" readonly>
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section-l3 chart-cv">
-                                 <canvas id="property_listings" class="chart" height="450" width="700"></canvas>
+                                 <canvas id="property_listings" class="chart" height="250" width="700"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -154,19 +154,19 @@
                                     </button>
                                     <ul class="dropdown-menu dropdown-menu--extended" role="menu">
                                         <li class="dd-menu--extended__item">
-                                            <label> All </label>
+                                            <a href="#"> All </a>
                                         </li>
                                         <li class="dd-menu--extended__item">
-                                            <label> Auction </label>
+                                            <a href="#"> Auction </a>
                                         </li>
                                         <li class="dd-menu--extended__item">
-                                            <label> Private Sale </label>
+                                            <a href="#"> Private Sale </a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="form-group pull-left">
-                                <input type="text" class="form-control" placehoder="12,345">
+                                <input type="text" class="form-control" value="12,345" readonly>
                             </div>
                         </div>
                     </div>
@@ -174,7 +174,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section-l3 chart-cv">
-                                 <canvas id="offers" class="chart" height="450" width="700"></canvas>
+                                 <canvas id="offers" class="chart" height="250" width="700"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -185,31 +185,8 @@
                     <div class="panel__heading">
                         <h1 class="h4 pull-left">No of Vendor Registrations ( Past 30 days )</h1>
                         <div class="pull-right">
-                            <div class="pull-left selectpicker-md2 mr-5px">
-                                <div class="btn-group grp-block">
-                                    <button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown">
-                                        <span class="pull-left">
-                                            All
-                                        </span>
-                                        <span class="pull-right">
-                                            <span class="caret"></span>
-                                        </span>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu--extended" role="menu">
-                                        <li class="dd-menu--extended__item">
-                                            <label> All </label>
-                                        </li>
-                                        <li class="dd-menu--extended__item">
-                                            <label> Auction </label>
-                                        </li>
-                                        <li class="dd-menu--extended__item">
-                                            <label> Private Sale </label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="form-group pull-left">
-                                <input type="text" class="form-control" placehoder="12,345">
+                                <input type="text" class="form-control" value="12,345" readonly>
                             </div>
                         </div>
                     </div>
@@ -217,7 +194,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section-l3 chart-cv">
-                                 <canvas id="vendor_registrations" class="chart" height="450" width="700"></canvas>
+                                 <canvas id="vendor_registrations" class="chart" height="250" width="700"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -228,31 +205,8 @@
                     <div class="panel__heading">
                         <h1 class="h4 pull-left">No of Bidder / Buyer Registrations ( Past 30 days )</h1>
                         <div class="pull-right">
-                            <div class="pull-left selectpicker-md2 mr-5px">
-                                <div class="btn-group grp-block">
-                                    <button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown">
-                                        <span class="pull-left">
-                                            All
-                                        </span>
-                                        <span class="pull-right">
-                                            <span class="caret"></span>
-                                        </span>
-                                    </button>
-                                    <ul class="dropdown-menu dropdown-menu--extended" role="menu">
-                                        <li class="dd-menu--extended__item">
-                                            <label> All </label>
-                                        </li>
-                                        <li class="dd-menu--extended__item">
-                                            <label> Auction </label>
-                                        </li>
-                                        <li class="dd-menu--extended__item">
-                                            <label> Private Sale </label>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
                             <div class="form-group pull-left">
-                                <input type="text" class="form-control" placehoder="12,345">
+                                <input type="text" class="form-control" value="12,345" readonly>
                             </div>
                         </div>
                     </div>
@@ -260,7 +214,7 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="section-l3 chart-cv">
-                                 <canvas id="bidder_buyer" class="chart" height="450" width="700"></canvas>
+                                 <canvas id="bidder_buyer" class="chart" height="250" width="700"></canvas>
                                 </div>
                             </div>
                         </div>
@@ -309,6 +263,16 @@
             {
                 fillColor : "rgba(113,227,37,0.5)",
                 highlightFill: "rgba(113,227,37,0.75)",
+                data : [randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2()]
+            },
+            {
+                fillColor : "rgba(13,77,126,0.4)",
+                highlightFill : "rgba(151,187,205,0.75)",
+                data : [randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2()]
+            },
+            {
+                fillColor : "rgba(229,15,76,0.4)",
+                highlightFill : "rgba(229,15,76,0.75)",
                 data : [randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2(),randomScalingFactor2()]
             }
         ]

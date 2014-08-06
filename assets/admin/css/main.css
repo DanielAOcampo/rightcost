@@ -3200,6 +3200,11 @@ disabled look for disabled choices in the results dropdown
   margin: 0;
   font-size: #393c43;
 }
+.panel__heading .form-control[disabled],
+.panel__heading .form-control[readonly],
+.panel__heading fieldset[disabled] .form-control {
+  background: #fff;
+}
 .panel-heading {
   display: block;
 }

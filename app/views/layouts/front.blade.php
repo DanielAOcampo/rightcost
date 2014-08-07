@@ -57,10 +57,6 @@
 </div>
 
 
-
-
-
-
   <script src="/assets/global/js/jquery.are-you-sure.js"></script>
   <script src="{{ URL::asset('assets/site/js/vendor/selectordie.min.js') }}"></script>
   <script src="{{ URL::asset('assets/site/js/vendor/scrollReveal.js') }}"></script>

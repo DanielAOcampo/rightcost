@@ -1,23 +1,24 @@
 @extends('layouts.back')
 
 @section('section-top')
-  <h1 class="page-title">
-      <span>Widgets</span>
-  </h1>
-@stop
+<div class="nav navbar-left">
+    <a href="{{ URL::to('/') }}"><span class="fa fa-th"></span>View your Website</a>
+</div>
 
+@stop
 @section('content')
 
     <div class="section section--top">
-        <div class="section-left">
-            <ul class="action-list">
-                <li>
-                    <a href="{{ URL::to('admin/widget?widget=0') }}" class="btn btn-success">
-                        <span>Create new widget</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="page-title">
+            <h3 class="pull-left"> <span class="fa fa-cubes"></span> Widgets </h3>
         </div>
+        <ul class="action-list">
+            <li><a  href="{{ URL::to('admin/widget?widget=0') }}" class=" btn btn-default">
+                <i class="fa fa-plus"></i>
+                <span>Create new widget</span>
+              </a>
+            </li>
+        </ul>
     </div>
 
     {{ Site::system_messages() }}

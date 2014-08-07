@@ -1,42 +1,45 @@
 @extends('layouts.back')
 
 @section('section-top')
-  <div class="navbar-left">
-      <h1 class="page-title">
-        <span>Page</span>
-      </h1>
-      {{ $lists->search_box() }}
-  </div>
-  
+<div class="nav navbar-left">
+    <a href="{{ URL::to('/') }}"><span class="fa fa-th"></span>View your Website</a>
+</div>
+
 @stop
 @section('content')
 
+
 <div class="section section--top">
-    <div class="section-left">
-      <ul class="action-list">
-        <li>
-          <a href="{{ URL::to('admin/page/create') }}" class="btn btn-success">
+
+  <div class="page-title">
+        <h3 class="pull-left"> <span class="fa fa-file"></span> Page </h3>
+    </div>
+
+    <div class="pull-right search">
+        <form class="form-inline form-rounded" role="form">
+            <div class="form-group">
+                <i class="fa fa-search"></i>
+                <input type="text" class="form-control" id="s" name="s" placeholder="Search..">
+            </div>
+        </form>
+    </div>
+    <ul class="action-list">
+        <li><a  href="{{ URL::to('admin/page/create') }}" class=" btn btn-default">
             <i class="fa fa-plus"></i>
             <span>Add New</span>
           </a>
         </li>
         <li>
-          <a onclick="cskAdmin.BootrstrapAlert.xdelete('admin/page/delete', 'Group buy');return false;" class="delete-post btn btn-default">
+        <a onclick="cskAdmin.BootrstrapAlert.xdelete('admin/page/delete', 'Group buy');return false;" class="delete-post btn btn-default">
             <i class="fa fa-trash-o"></i>
             <span>Delete</span>
           </a>
         </li>
-      </ul>
-    </div>
-    <div class="section-right">
-      <ul class="action-list">
-        <li>
-          <div class="selectpicker-sm">
-            {{ $lists->records_per_page() }}
-          </div>
+        <li class="pull-right">
+          {{ $lists->records_per_page() }}
         </li>
-      </ul>
-    </div>
+    </ul>
+
 </div>
 
 <!-- Main Content -->

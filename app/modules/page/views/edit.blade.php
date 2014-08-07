@@ -1,18 +1,19 @@
 @extends('layouts.back')
 
 @section('section-top')
-
-<div class="navbar-left">
-	<h1 class="page-title">
-		<span>Page</span>
-	</h1>
+<div class="nav navbar-left">
+    <a href="{{ URL::to('/') }}"><span class="fa fa-th"></span>View your Website</a>
 </div>
 
 @stop
 @section('content')
+
 	<div class="section section--top">	
-		<div class="section-left">
-			<ul class="action-list">
+	 <div class="page-title">
+        <h3 class="pull-left"> <span class="fa fa-file"></span> Page </h3>
+    </div>
+		<div class="section-right">
+			<ul class="action-top">
 				<li>
 					<a href="{{ URL::to('admin/page/create') }}" class="btn btn-success">
 				        <i class="fa fa-plus mr-5px"></i>

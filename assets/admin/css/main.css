@@ -673,11 +673,11 @@
   padding-left: 18px;
   padding-right: 18px;
 }
-.navbar-default .nav a {
+.navbar-default .nav > a {
   color: #cecece;
 }
-.navbar-default .nav a:focus,
-.navbar-default .nav a:hover {
+.navbar-default .nav > a:focus,
+.navbar-default .nav > a:hover {
   color: #fff;
 }
 .navbar-default .nav > .active > a {
@@ -1172,6 +1172,12 @@ body {
   border-top: 1px solid #e3e3e3;
   clear: both;
   background: #efefef;
+  padding: 10px 16px;
+}
+.section--top .action-top {
+  list-style: none;
+  border-top: 1px solid #e3e3e3;
+  clear: both;
   padding: 10px 16px;
 }
 .section--top .section__title {
@@ -3092,7 +3098,7 @@ disabled look for disabled choices in the results dropdown
 }
 /*spark line*/
 .chart {
-  display: inline-block;
+  display: block;
   text-align: center;
   width: 100%;
 }
@@ -5599,7 +5605,7 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value="orange"] {
  * Note: Overrides all css from the bootstrap
  */
 .t-sidebar {
-  position: fixed;
+  position: absolute;
   z-index: 1014;
   top: 0;
   left: 0;
@@ -5616,6 +5622,44 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value="orange"] {
   background: url("../../admin/i//asidebg.png") no-repeat;
   background-position: top right;
   background-color: #196cc1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transition: all all 0.2s ease-out;
+  -moz-transition: all all 0.2s ease-out;
+  -o-transition: all all 0.2s ease-out;
+  transition: all all 0.2s ease-out;
+  min-height: 915px;
+}
+.t-sidebar:before,
+.t-sidebar:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.t-sidebar:after {
+  clear: both;
+}
+.t-sidebar.collapsed {
+  width: 70px;
+}
+.t-sidebar.collapsed .nav > li > a span {
+  display: none;
+}
+.t-sidebar.collapsed .btn-collapse {
+  padding: 16px 24px 15px 30px;
+}
+.t-sidebar.collapsed .btn-collapse span {
+  font-size: 25px;
+}
+.t-sidebar.collapsed .nav-welcome > span {
+  display: none;
+}
+.t-sidebar.collapsed .navbar-brand {
+  background-position: -5px 12px !important;
+}
+.t-sidebar.collapsed .navbar .separator {
+  display: none;
 }
 .t-sidebar .navbar-header {
   float: none;
@@ -5723,7 +5767,7 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value="orange"] {
   margin-right: 0;
 }
 .t-sidebar .nav > li.active > a {
-  background-color: #4E3E14;
+  background-color: rgba(2255, 255, 255, 0.6);
   color: #fff;
   text-shadow: none;
 }
@@ -5772,7 +5816,7 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value="orange"] {
   display: block!important;
   position: absolute;
   width: 170px;
-  left: 199px;
+  left: 100%;
   top: 0;
 }
 .t-sidebar .sub-menu--extended.collapsed > a {
@@ -5797,22 +5841,25 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value="orange"] {
 }
 @media (max-width: 1100px) {
   .t-sidebar {
-    width: 68px;
+    width: 70px;
   }
-  .t-sidebar .nav a {
-    overflow: hidden;
-    height: 36px;
+  .t-sidebar .nav > li > a span {
+    display: none;
   }
-  .t-sidebar .nav .fa {
-    float: left;
+  .t-sidebar .btn-collapse {
+    padding: 16px 24px 15px 30px;
   }
-  .t-sidebar .nav span {
-    float: left;
-    margin-left: 5px;
-    text-indent: -1000%;
-    white-space: nowrap;
-    overflow: hidden;
-    opacity: 0;
+  .t-sidebar .btn-collapse span {
+    font-size: 25px;
+  }
+  .t-sidebar .nav-welcome > span {
+    display: none;
+  }
+  .t-sidebar .navbar-brand {
+    background-position: -5px 12px !important;
+  }
+  .t-sidebar .navbar .separator {
+    display: none;
   }
 }
 .t-sidebar--pushed {
@@ -5847,6 +5894,22 @@ ul.wysihtml5-toolbar div[data-wysihtml5-command-value="orange"] {
 }
 .t-content .alert {
   margin: 14px 15px 0;
+}
+.t-content.collapsed {
+  padding-left: 70px;
+}
+.t-content.collapsed .navbar-default,
+.t-content.collapsed .section--top {
+  left: 70px;
+}
+@media (max-width: 1100px) {
+  .t-content {
+    padding-left: 70px;
+  }
+  .t-content .navbar-default,
+  .t-content .section--top {
+    left: 70px;
+  }
 }
 .page-title {
   float: left;
@@ -5896,12 +5959,12 @@ html {
   -webkit-font-smoothing: antialiased !important;
 }
 ::-moz-selection {
-  background: #698b98;
+  background: #72bceb;
   color: #fff;
   text-shadow: none;
 }
 ::selection {
-  background: #698b98;
+  background: #72bceb;
   color: #fff;
   text-shadow: none;
 }

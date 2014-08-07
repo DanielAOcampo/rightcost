@@ -12,7 +12,40 @@ var cskAdmin = {
 		this.BootrstrapAlert.init();
 		this.selectCapabilities();
 		this.deSelectCapabilities();
+		this.ScriptLoad();
 
+	},
+
+	ScriptLoad: function(){
+
+		var cont = $('.t-content').outerHeight();
+		var nav = $('.navbar-default').outerHeight();
+		var sectop = $('.section--top').outerHeight();
+		var win = $(window).outerHeight();
+		var totalH = cont + nav + sectop;
+
+		if(win>totalH){
+			totalH  = win ;
+		}
+
+		$('.t-sidebar').height(totalH);
+
+
+		 $(window).resize(function() { 
+
+		 	var cont2 = $('.t-content').outerHeight();
+			var nav2 = $('.navbar-default').outerHeight();
+			var sectop2 = $('.section--top').outerHeight();
+			var win2 = $(window).outerHeight();
+			var totalH2 = cont2 + nav2 + sectop2;
+
+			if(win2>totalH2){
+				totalH2  = win2 ;
+			}
+
+			$('.t-sidebar').height(totalH2);
+
+		 });
 	},
 
 	/**Check User Capabilities*/
@@ -23,6 +56,8 @@ var cskAdmin = {
 		  $(':checkbox[name^="capability"]').prop('checked', 'checked');
 
 		});
+
+
 	},
 	/**Uncheck User Capabilities*/
 	deSelectCapabilities: function(){
@@ -41,6 +76,16 @@ var cskAdmin = {
 			$(this).addClass('collapsed');
 		},function(){
 	    	$(".sub-menu--extended:not(.active)").removeClass('collapse').removeClass('collapsed');
+		});
+
+		$('body').on('click', '.btn-collapse', function (e) {
+			e.preventDefault();
+
+		  $('.t-sidebar, .t-content').toggleClass('collapsed');
+
+		  $(this).html("<span class='fa fa-arrow-circle-left'></span>")
+		  $('.collapsed .btn-collapse').html("<span class='fa fa-arrow-circle-right'></span>")
+
 		});
 
 	},

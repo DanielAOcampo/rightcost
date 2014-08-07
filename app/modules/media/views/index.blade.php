@@ -1,40 +1,38 @@
 @extends('layouts.back')
 
 @section('section-top')
-  <div class="navbar-left">
-    <h1 class="page-title">
-      <span>Banners</span>
-    </h1>
-    {{ $lists->search_box() }}
-  </div>
+<div class="nav navbar-left">
+    <a href="{{ URL::to('/') }}"><span class="fa fa-th"></span>View your Website</a>
+</div>
+
 @stop
 @section('content')
+
   <div class="section--top">
-    <div class="section-left">
-      <ul class="action-list">
-          <li>
-            <a href="{{ URL::to('admin/media/create') }}" class="btn btn-success">
-              <i class="fa fa-plus mr-5px"></i>
-              <span>Add New</span>
-            </a>
-          </li>
-          <li>
-            <a onclick="cskAdmin.BootrstrapAlert.xdelete('admin/media/delete', 'Group buy');return false;" class="delete-post btn btn-default">
-              <i class="fa fa-trash-o"></i>
-              <span>Delete</span>
-            </a>
-          </li>
-      </ul>
+    <div class="page-title">
+        <h3 class="pull-left"> <span class="fa fa-photo"></span> Media </h3>
     </div>
-    <div class="section-right">
-      <ul class="action-list">
-        <li>
-          <div class="selectpicker-sm">
-            {{ $lists->records_per_page() }}
-          </div>
+    
+    <div class="pull-right">
+        {{ $lists->search_box() }}
+    </div>
+    <ul class="action-list">
+        <li><a  href="{{ URL::to('admin/media/create') }}" class=" btn btn-default">
+            <i class="fa fa-plus"></i>
+            <span>Add New</span>
+          </a>
         </li>
-      </ul>
-    </div>
+        <li>
+        <a onclick="cskAdmin.BootrstrapAlert.xdelete('admin/media/delete', 'Group buy');return false;" class="delete-post btn btn-default">
+            <i class="fa fa-trash-o"></i>
+            <span>Delete</span>
+          </a>
+        </li>
+        <li class="pull-right">
+          {{ $lists->records_per_page() }}
+        </li>
+    </ul>
+
   </div>
   {{ Site::system_messages() }}
   {{ $lists->prepare_items() }}

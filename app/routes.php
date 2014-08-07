@@ -20,7 +20,33 @@ Route::get('/', function()
 	return View::make('home');
 });
 
-
+Route::get('admin/auction-logs', function(){
+	return View::make('admin.auction-logs');
+});
+Route::get('admin/negotiation', function(){
+	return View::make('admin.negotiation-logs');
+});
+Route::get('admin/customers', function(){
+	return View::make('admin.customers');
+});
+Route::get('admin/service-provider', function(){
+	return View::make('admin.service-provider');
+});
+Route::get('admin/properties', function(){
+	return View::make('admin.properties');
+});
+Route::get('admin/admin-user', function(){
+	return View::make('admin.admin-user');
+});
+Route::get('admin/messages', function(){
+	return View::make('admin.messages');
+});
+Route::get('admin/orders', function(){
+	return View::make('admin.orders');
+});
+Route::get('admin', function(){
+	return View::make('admin.login');
+});
 
 Route::get('/phpinfo', function(){
  	phpinfo();

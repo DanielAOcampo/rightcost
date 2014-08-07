@@ -1,25 +1,24 @@
 @extends('layouts.back')
 
 @section('section-top')
-  <div class="navbar-left">
-      <h1 class="page-title">
-          <span>Navigations</span>
-      </h1>
-  </div>
+<div class="nav navbar-left">
+    <a href="{{ URL::to('/') }}"><span class="fa fa-th"></span>View your Website</a>
+</div>
+
 @stop
 @section('content')
-<!-- Main Content -->
 
 <div class="section section--top">
-    <div class="section-left">
-        <ul class="action-list">
-            <li>
-                <a href="{{ URL::to('admin/menu?menu=0') }}" class="btn btn-success">
-                    <span>Create new menu</span>
-                </a>
-            </li>
-        </ul>
+    <div class="page-title">
+        <h3 class="pull-left"> <span class="fa fa-link"></span> Navigation </h3>
     </div>
+    <ul class="action-list">
+        <li><a  href="{{ URL::to('admin/menu?menu=0') }}" class=" btn btn-default">
+            <i class="fa fa-plus"></i>
+            <span>Create new menu</span>
+          </a>
+        </li>
+    </ul>
 </div>
 
     {{ Site::system_messages() }}

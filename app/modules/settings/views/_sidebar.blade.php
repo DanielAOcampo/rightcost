@@ -1,12 +1,15 @@
 @extends('layouts.back')
 
 @section('section-top')
-	<div class="navbar-left">
-		<h1 class="page-title">
-			<span>Settings</span>
-		</h1>
-	</div>
+<div class="nav navbar-left">
+    <a href="{{ URL::to('/') }}"><span class="fa fa-th"></span>View your Website</a>
+</div>
 @stop
+<div class="section section--top">
+	<div class="page-title">
+        <h3 class="pull-left"> <span class="fa fa-cog"></span> Settings </h3>
+    </div>
+</div>
 
 @section('content')
 	{{ Site::system_messages() }}

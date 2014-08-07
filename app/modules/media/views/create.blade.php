@@ -2,20 +2,20 @@
 
 @section('section-top')
 <!-- Main Content -->
-<div class="section section--top">
-	<div class="pull-left">
-		<h1 class="h3 section__title">
-			<i class="fa fa-clock-o mr-5px"></i>
-			<span>Upload New Media</span>
-		</h1>
-	</div>
+<div class="nav navbar-left">
+    <a href="{{ URL::to('/') }}"><span class="fa fa-th"></span>View your Website</a>
 </div>
 @stop
+<div class="section section--top">
+	<div class="page-title">
+        <h3 class="pull-left"> <span class="fa fa-photo"></span> Media </h3>
+    </div>
+</div>
+
 @section('content')
 
-<div class="t-content">
-	{{ Site::system_messages() }}
-	@include('media::uploader')
-</div>
+{{ Site::system_messages() }}
+@include('media::uploader')
+
 
 @stop

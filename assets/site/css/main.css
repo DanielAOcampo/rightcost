@@ -1231,6 +1231,9 @@ html[xmlns] .flexslider .slides {
 .ml-40 {
   margin-left: 40px;
 }
+.skin-gray {
+  background-color: #f7f7f7;
+}
 .map-view-wrapper {
   position: absolute;
   width: 100%;

@@ -106,62 +106,171 @@
 
                          <!-- Check if current user has capability to manage manage_pages -->
      
-                        <li class="sub-menu sub-menu--extended collapse " data-mysegment="admin/auction-logs">
-                            <a href="{{ URL::to('admin/auction-logs') }}">
+                        <li class="sub-menu sub-menu--extended collapse " data-mysegment="admin/pages">
+                            <a href="{{ URL::to('admin/pages') }}">
                                 <i class="fa fa-list"></i>
                                 <span>Auction Logs</span>
-                            </a>
+                            </a><!-- 
+                            <ul class="sub">
+                                <li data-mysegment="admin/pages">
+                                    <a href="{{ URL::to('admin/pages') }}"><i class="fa fa-star"></i><span>All</span></a>
+                                </li>
+                                <li data-mysegment="admin/page">
+                                    <a href="{{ URL::to('admin/page/create') }}">
+                                        <i class="fa fa-plus"></i>
+                                        <span>Add New</span>
+                                    </a>
+                                </li>
+                                <li data-mysegment="admin/taxonomy/page-category">
+                                    <a href="{{ URL::to('admin/taxonomy/page-category') }}"><i class="fa fa-tag"></i><span>Category</span></a>
+                                </li>
+                            </ul> -->
                         </li>
                     
 
                         <!-- Check if current user has capability to manage manage_blogs -->
                       
                         <li class="sub-menu sub-menu--extended collapse " data-mysegment="admin/blogs">
-                            <a href="{{ URL::to('admin/negotiation') }}">
+                            <a href="{{ URL::to('admin/blogs') }}">
                                 <i class="fa fa-list-ul"></i>
                                 <span>Negotiation Logs</span>
                             </a>
+                            <ul class="sub" >
+                                <li data-mysegment="admin/blogs">
+                                    <a href="{{ URL::to('admin/blogs') }}"><i class="fa fa-star"></i><span>All</span></a>
+                                </li>
+                                <li data-mysegment="admin/blog">
+                                    <a href="{{ URL::to('admin/blog/create') }}">
+                                        <i class="fa fa-plus"></i>
+                                        <span>Add New</span>
+                                    </a>
+                                </li>
+                                <li data-mysegment="admin/taxonomy/blog-category">
+                                    <a href="{{ URL::to('admin/taxonomy/blog-category') }}"><i class="fa fa-tag"></i><span>Category</span></a>
+                                </li>
+                            </ul>
                         </li>
 
-                        <li class="" data-mysegment="admin/customers">
-                            <a href="{{ URL::to('admin/customers') }}" >
+                        <li class="sub-menu sub-menu--extended collapse " data-mysegment="admin/policies">
+                            <a href="{{ URL::to('admin/policies') }}">
+                                <i class="fa fa-bullhorn"></i>
+                                <span>Policies</span>
+                            </a>
+                            <ul class="sub" >
+                                <li data-mysegment="admin/policies">
+                                    <a href="{{ URL::to('admin/policies') }}"><i class="fa fa-star"></i><span>All</span></a>
+                                </li>
+                                <li data-mysegment="admin/policy">
+                                    <a href="{{ URL::to('admin/policy/create') }}">
+                                        <i class="fa fa-plus"></i>
+                                        <span>Add New</span>
+                                    </a>
+                                </li>
+                                <li data-mysegment="admin/taxonomy/policy-category">
+                                    <a href="{{ URL::to('admin/taxonomy/policy-category') }}"><i class="fa fa-tag"></i><span>Category</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                       
+
+                        <!-- Check if current user has capability to manage manage_blogs -->
+                       
+                        <li class="sub-menu sub-menu--extended collapse " data-mysegment="admin/projects">
+                            <a href="{{ URL::to('admin/projects') }}">
+                                <i class="fa fa-building"></i>
+                                <span>Projects</span>
+                            </a>
+                            <ul class="sub" >
+                                <li data-mysegment="admin/projects">
+                                    <a href="{{ URL::to('admin/projects') }}"><i class="fa fa-star"></i><span>All</span></a>
+                                </li>
+                                <li data-mysegment="admin/project">
+                                    <a href="{{ URL::to('admin/project/create') }}">
+                                        <i class="fa fa-plus"></i>
+                                        <span>Add New</span>
+                                    </a>
+                                </li>
+                                <li data-mysegment="admin/taxonomy/project-category">
+                                    <a href="{{ URL::to('admin/taxonomy/project-category') }}"><i class="fa fa-tag"></i><span>Category</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                    
+
+
+                         <!-- Check if current user has capability to manage manage_blogs -->
+
+                         
+                       
+                        <li class="sub-menu sub-menu--extended collapse " data-mysegment="admin/people">
+                            <a href="{{ URL::to('admin/people') }}">
                                 <i class="fa fa-users"></i>
-                                <span>Customer</span>
+                                <span>People</span>
                             </a>
+                            <ul class="sub" >
+                                <li data-mysegment="admin/people">
+                                    <a href="{{ URL::to('admin/people') }}"><i class="fa fa-star"></i><span>All</span></a>
+                                </li>
+                                <li data-mysegment="admin/people">
+                                    <a href="{{ URL::to('admin/people/create') }}">
+                                        <i class="fa fa-plus"></i>
+                                        <span>Add New</span>
+                                    </a>
+                                </li>
+                                <li data-mysegment="admin/taxonomy/people-category">
+                                    <a href="{{ URL::to('admin/taxonomy/people-category') }}"><i class="fa fa-tag"></i><span>Category</span></a>
+                                </li>
+                            </ul>
                         </li>
 
-                        <li class="" data-mysegment="admin/service-provider">
-                            <a href="{{ URL::to('admin/service-provider') }}" >
-                                <i class="fa fa-globe"></i>
-                                <span>Service Providers</span>
-                            </a>
-                        </li>
 
-                        <li class="" data-mysegment="admin/properties">
-                            <a href="{{ URL::to('admin/properties') }}" >
-                                <i class="fa fa-home"></i>
-                                <span>Properties</span>
+                        <!-- Check if current user has capability to manage manage_blogs -->
+                       
+                        <li class="sub-menu sub-menu--extended collapse " data-mysegment="admin/testimonial">
+                            <a href="{{ URL::to('admin/testimonials') }}">
+                                <i class="fa fa-bullhorn"></i>
+                                <span>Testimonials</span>
                             </a>
+                            <ul class="sub" >
+                                <li data-mysegment="admin/testimonials">
+                                    <a href="{{ URL::to('admin/testimonials') }}"><i class="fa fa-star"></i><span>All</span></a>
+                                </li>
+                                <li data-mysegment="admin/testimonial">
+                                    <a href="{{ URL::to('admin/testimonial/create') }}">
+                                        <i class="fa fa-plus"></i>
+                                        <span>Add New</span>
+                                    </a>
+                                </li>
+                                <li data-mysegment="admin/taxonomy/testimonial-category">
+                                    <a href="{{ URL::to('admin/taxonomy/testimonial-category') }}"><i class="fa fa-tag"></i><span>Category</span></a>
+                                </li>
+                            </ul>
                         </li>
+                      
 
-                        <li class="" data-mysegment="admin/admin-user">
-                            <a href="{{ URL::to('admin/admin-user') }}" >
-                                <i class="fa fa-user"></i>
-                                <span>Admin User</span>
+                     
+                        
+                        <!-- Check if current user has capability to manage manage_blogs -->
+                        
+                        <li class="sub-menu sub-menu--extended collapse" data-mysegment="admin/banners">
+                            <a href="{{ URL::to('admin/banners') }}">
+                                <i class="fa fa-bullhorn"></i>
+                                <span>Banners</span>
                             </a>
-                        </li>
-
-                        <li class="" data-mysegment="admin/messages">
-                            <a href="{{ URL::to('admin/messages') }}" >
-                                <i class="fa fa-envelope"></i>
-                                <span>Messages</span>
-                            </a>
-                        </li>
-                         <li class="" data-mysegment="admin/orders">
-                            <a href="{{ URL::to('admin/orders') }}" >
-                                <i class="fa fa-shopping-cart"></i>
-                                <span>Orders</span>
-                            </a>
+                            <ul class="sub">
+                                <li data-mysegment="admin/banners">
+                                    <a href="{{ URL::to('admin/banners') }}"><i class="fa fa-star"></i><span>All</span></a>
+                                </li>
+                                <li data-mysegment="admin/banner/create">
+                                    <a href="{{ URL::to('admin/banner/create') }}">
+                                        <i class="fa fa-plus"></i>
+                                        <span>Add New</span>
+                                    </a>
+                                </li>
+                                <li data-mysegment="admin/taxonomy/banner-category">
+                                    <a href="{{ URL::to('admin/taxonomy/banner-category') }}"><i class="fa fa-tag"></i><span>Category</span></a>
+                                </li>
+                            </ul>
                         </li>
                       
                         
@@ -173,11 +282,54 @@
 
                         <li class="sub-menu sub-menu--extended collapse " data-mysegment="admin/pages">
                             <a href="{{ URL::to('admin/pages') }}">
-                                <i class="fa fa-file"></i>
+                                <i class="fa fa-list"></i>
                                 <span>Page</span>
                             </a>
                         </li>
+                       
+                        <li class="sub-menu sub-menu--extended collapse" data-mysegment="admin/members">
+                            <a href="{{ URL::to('admin/members') }}">
+                                <i class="fa fa-user"></i>
+                                <span>Users</span>
+                            </a>
+                            <ul class="sub">
+                                <li data-mysegment="admin/members">
+                                    <a href="{{ URL::to('admin/members') }}"><i class="fa fa-star"></i>All</a>
+                                </li>
+                                <li data-mysegment="admin/members/groups">
+                                    <a href="{{ URL::to('admin/members/groups') }}"><i class="fa fa-tag"></i>Add User</a>
+                                </li>
+                            </ul>
+                        </li>
 
+                        <li class="sub-menu sub-menu--extended collapse" data-mysegment="admin/members">
+                           <a href="{{ URL::to('admin/members/groups') }}">
+                                <i class="fa fa-group"></i>
+                                <span>Groups</span>
+                            </a>
+                            <ul class="sub">
+                                <li data-mysegment="admin/members/groups">
+                                    <a href="{{ URL::to('admin/members/groups') }}"><i class="fa fa-star"></i>All</a>
+                                </li>
+                                <li data-mysegment="admin/members/group/create">
+                                    <a href="{{ URL::to('admin/members/group/create') }}"><i class="fa fa-tag"></i>Add User</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        
+                      
+
+
+                        <!-- Check if current user has capability to manage manage_blogs -->
+                        <!--  @if( Auth::User()->group->hasRole('manage_blogs') )
+                        <li class="@if(Request::segment(2) == 'comments'){{ 'active' }}@endif">
+                            <a href="{{ URL::to('admin/comments') }}">
+                                <i class="fa fa-comment-o"></i>
+                                <span>Comments</span>
+                            </a>
+                        </li>
+                        @endif -->
 
                         <!-- Check if current user has capability to manage manage_navigation -->
                        
@@ -186,6 +338,14 @@
                                 <i class="fa fa-link"></i>
                                 <span>Navigation</span>
                             </a>
+                            <ul class="sub">
+                                <li data-mysegment="admin/menu/create">
+                                    <a href="{{ URL::to('admin/menu/create') }}">
+                                        <i class="fa fa-plus"></i>
+                                        <span>Add New</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                        
                         <!-- Check if current user has capability to manage manage_navigation -->
@@ -204,6 +364,18 @@
                                 <i class="fa fa-picture-o"></i>
                                 <span>Media</span>
                             </a>
+
+                            <ul class="sub">
+                                <li  data-mysegment="admin/media">
+                                    <a href="{{ URL::to('admin/media') }}"><i class="fa fa-star"></i><span>All</span></a>
+                                </li>
+                                <li data-mysegment="admin/media/create">
+                                    <a href="{{ URL::to('admin/media/create') }}">
+                                        <i class="fa fa-plus"></i>
+                                        <span>Add New</span>
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
                         
                         <!-- Check if current user has capability to manage manage_settings -->
@@ -213,13 +385,6 @@
                             <a href="{{ URL::to('admin/settings/general') }}">
                                 <i class="fa fa-cog"></i>
                                 <span>Settings</span>
-                            </a>
-                        </li>
-
-                        <li class="sub-menu sub-menu--extended collapse " data-mysegment="admin/blogs">
-                            <a href="{{ get_logout_url() }}">
-                                <i class="fa fa-sign-out"></i>
-                                <span>Logout</span>
                             </a>
                         </li>
                         
